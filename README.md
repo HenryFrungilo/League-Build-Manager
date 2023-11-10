@@ -1,6 +1,6 @@
 Welcome to my League Of Legends - TFT Comp &amp; League Build Manager! 
 
-This is a personal projects for non-comercial use ONLY! 
+This is a personal projects for NON-COMERCIAL USE ONLY! 
 
 As a huge fan of the game and an excited Web Developer, i decided to combine two things that i like to create a new challenge. 
 
