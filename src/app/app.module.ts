@@ -3,16 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainpageComponent } from './pages/tft/mainpage/mainpage.component';
+import { MainpageModule } from './pages/tft/mainpage/mainpage.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainpageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MainpageModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
