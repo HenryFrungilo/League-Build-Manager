@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 import { MainpageComponent } from './pages/tft/mainpage/mainpage.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 const routes: Routes = [
-    {path: 'TFT/tft-comp-manager', component: MainpageComponent},
-    {path: 'LOL/league-build-manager', component: MainpageComponent},
+  { path: 'tft-comp-manager', component: MainpageComponent },
+  { path: 'league-build-manager', component: MainpageComponent },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
