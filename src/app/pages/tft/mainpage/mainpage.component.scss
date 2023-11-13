@@ -1,0 +1,15 @@
+.main-content {
+  margin-top: 17%;
+  display: flex;
+  justify-content: center;
+
+  .errorCard {
+    align-items: center;
+    width: 50%;
+    font-size: 20pt;
+
+    .textCard {
+      font-size: 14pt;
+    }
+  }
+}
