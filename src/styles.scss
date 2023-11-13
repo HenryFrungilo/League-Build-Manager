@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: BeaufortLol;
+  src: url(assets/fonts/BeaufortforLOL-HeavyItalic.ttf);
+}
+
+@font-face {
+  font-family: BeaufortMedium;
+  src: url(assets/fonts/BeaufortforLOL-MediumItalic.ttf);
+}
+
+$title-text: BeaufortLol;
+
+.titleText {
+  font-family: $title-text;
+}
+
+* {
+  app-page-header {
+    margin: 0;
+    padding: 0;
+  }
+}
