@@ -1,10 +1,8 @@
-<div class="">
-  <p-card header="This don't looks right...">
-    <p class="m-0">
-      404, Page not Found!
+<div class="main-content">
+  <p-card class="errorCard" header="This don't looks right...">
+    <p class="m-0 textCard">
+      Error 404 Not Found! This means that the page you were trying to access is probably unavaiable or don't exist.
     </p>
-    <p class="m-0">
-      Go back to the mainpage.
-    </p>
+    <p-button label="Go back to MainPage" (onClick)="returnToMainPage()"></p-button>
   </p-card>
 </div>

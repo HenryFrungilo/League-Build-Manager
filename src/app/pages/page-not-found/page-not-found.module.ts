@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { PageNotFoundComponent } from './page-not-found.component';
 import { CardModule } from 'primeng/card';
+import {ButtonModule} from 'primeng/button'
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { CardModule } from 'primeng/card';
   ],
   imports: [
     CommonModule,
-    CardModule
+    CardModule,
+    ButtonModule
   ]
 })
 export class PageNotFoundModule { }
