@@ -26,8 +26,8 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "src/styles.scss",
-              "node_modules/primeng/resources/primeng.css",
-              "primeng/resources/themes/soho-dark/theme.css"
+              "primeng/resources/themes/soho-dark/theme.css",
+              "node_modules/primeng/resources/primeng.css"
             ],
             "scripts": []
           },
