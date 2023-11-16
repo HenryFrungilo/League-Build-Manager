@@ -1,0 +1,34 @@
+ul {
+  margin: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  li {
+    display: flex;
+    align-items: center;
+    margin-right: 5% !important;
+    list-style: none;
+    height: 100%;
+    .header {
+      width: 100%;
+      font-size: 1.5em;
+    }
+    .headerImage {
+      width: 2.5vw;
+      height: 2.5vw;
+      border-radius: 50%;
+      .logoImage {
+        width: 2.5vw;
+        height: 2.5vw;
+        filter: drop-shadow(0 0 1px rgb(255, 255, 255));
+      }
+    }
+    .headerLinks {
+      margin-right: 10%;
+      font-size: 16pt;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
