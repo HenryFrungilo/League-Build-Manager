@@ -27,9 +27,11 @@
             "styles": [
               "src/styles.scss",
               "primeng/resources/themes/soho-dark/theme.css",
-              "node_modules/primeng/resources/primeng.css"
+              "node_modules/primeng/resources/primeng.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {

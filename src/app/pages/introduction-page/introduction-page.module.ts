@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IntroductionPageComponent } from './introduction-page.component';
-import { ScrollTopModule } from 'primeng/scrolltop';
+import {RouterModule} from '@angular/router';
 
 
 
@@ -11,7 +11,7 @@ import { ScrollTopModule } from 'primeng/scrolltop';
   ],
   imports: [
     CommonModule,
-    ScrollTopModule
+    RouterModule
   ]
 })
 export class IntroductionPageModule { }

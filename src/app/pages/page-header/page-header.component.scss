@@ -6,10 +6,14 @@ ul {
   justify-content: space-between;
   li {
     display: flex;
-    align-items: center;
+    text-align: center;
     margin-right: 5% !important;
     list-style: none;
     height: 100%;
+    align-items: center;
+    .titleText {
+      align-self: center;
+    }
     .header {
       width: 100%;
       font-size: 1.5em;
