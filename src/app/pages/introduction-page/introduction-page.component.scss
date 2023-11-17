@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 #background {
   width: 100vw;
   height: 100vh;
@@ -27,14 +32,10 @@
     background: rgba(216, 216, 216, 0.25);
     text-align: center;
     align-items: center;
-    justify-content: flex-end;
-    overflow-wrap: normal;
+    justify-content: center;
     .gameList {
       display: flex;
       list-style: none;
-      .games {
-        margin-right: 6vw;
-      }
     }
   }
 }
