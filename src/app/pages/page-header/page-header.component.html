@@ -8,12 +8,22 @@
     <h1 class="header titleText">Totally (Not) serious League Manager</h1>
   </li>
   <li>
-    <a [routerLink]="['/tft-comp-manager']" class="headerLinks titleText"
-      >TFT</a
-    >
-    <a [routerLink]="['/league-build-manager']" class="headerLinks titleText"
-      >LOL</a
-    >
-    <a [routerLink]="['/about']" class="headerLinks titleText">About</a>
+    <ul>
+      <li>
+        <a
+          [routerLink]="['/league-build-manager']"
+          class="headerLinks titleText"
+          >LOL</a
+        >
+      </li>
+      <li>
+        <a [routerLink]="['/tft-comp-manager']" class="headerLinks titleText"
+          >TFT</a
+        >
+      </li>
+      <li>
+        <a [routerLink]="['/about']" class="headerLinks titleText">About</a>
+      </li>
+    </ul>
   </li>
 </ul>
