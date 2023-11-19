@@ -8,6 +8,6 @@ For TFT, this app can be used to create and see in-game synergy between differen
 
 Also, you can create and save your own builds to the League Build Manager to use later in your League games.
 
-Updates may be delayed because i'm only one developer vs hundreds of contets of the game :)
+Updates may be late because i'm only one developer vs thousands in-game contents :)
 
 Planning to add a Random Champion Picker & Random build generator (following the rules of mythic items, with the option to choose only Champions Role Item, or ***Chaos Mode***, which randomizes EVERY single item from the game) as well as cover other Riot Games, such as Valorant, Legends Of Runeterra and, when launched, Project L.
