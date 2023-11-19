@@ -10,4 +10,4 @@ Also, you can create and save your own builds to the League Build Manager to use
 
 Updates may be delayed because i'm only one developer vs hundreds of contets of the game :)
 
-Planning to add a Random Champion Picker & Random build generator (following the rules of mythic items, with the option to choose only Champions Role Item, or ***Chaos Mode***, which randomizes EVERY single item from the game)
+Planning to add a Random Champion Picker & Random build generator (following the rules of mythic items, with the option to choose only Champions Role Item, or ***Chaos Mode***, which randomizes EVERY single item from the game) as well as cover other Riot Games, such as Valorant, Legends Of Runeterra and, when launched, Project L.
