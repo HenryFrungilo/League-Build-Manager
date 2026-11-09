@@ -18,13 +18,13 @@ Planning to add a Random Champion Picker & Random build generator (following the
 docker compose up --build
 ```
 
-Then open http://localhost:48317.
+Then open http://localhost:3000.
 
 Without Compose:
 
 ```bash
 docker build -t league-build-manager .
-docker run --rm -p 48317:80 league-build-manager
+docker run --rm -p 3000:3000 league-build-manager
 ```
 
 ## Running locally (without Docker)
