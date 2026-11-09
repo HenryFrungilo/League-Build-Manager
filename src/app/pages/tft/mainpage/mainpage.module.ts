@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MainpageComponent } from './mainpage.component';
 import { CardModule } from 'primeng/card';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { CardModule } from 'primeng/card';
   ],
   imports: [
     CommonModule,
-    CardModule
+    CardModule,
+    RouterModule
   ]
 })
 export class MainpageModule { }
