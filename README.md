@@ -11,3 +11,29 @@ Also, you can create and save your own builds to the League Build Manager to use
 Updates may be late because i'm only one developer vs thousands in-game contents :)
 
 Planning to add a Random Champion Picker & Random build generator (following the rules of mythic items, with the option to choose only Champions Role Item, or ***Chaos Mode***, which randomizes EVERY single item from the game) as well as cover other Riot Games, such as Valorant, Legends Of Runeterra and, when launched, Project L.
+
+## Running with Docker
+
+```bash
+docker compose up --build
+```
+
+Then open http://localhost:8080.
+
+Without Compose:
+
+```bash
+docker build -t league-build-manager .
+docker run --rm -p 8080:80 league-build-manager
+```
+
+## Running locally (without Docker)
+
+Requires Node.js 18.
+
+```bash
+npm ci
+npm start
+```
+
+Then open http://localhost:4200.
