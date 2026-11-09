@@ -3,5 +3,5 @@ services:
     build: .
     image: league-build-manager
     ports:
-      - "8080:80"
+      - "48317:80"
     restart: unless-stopped
