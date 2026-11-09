@@ -1,9 +1,85 @@
 <img src="../../../assets/img/mainpage/background.png" id="background" />
 <div class="main-content">
-  <p-card class="errorCard" header="Sorry for the inconvenience...">
-    <p class="m-0 textCard">
-      Hello fellow user! This page still being built by the developer and might
-      be available soon!
+  <p-card *ngIf="data; else loading" class="buildCard">
+    <div class="champion">
+      <img
+        *ngIf="data.champion.icon; else letter"
+        class="portrait"
+        [src]="data.champion.icon"
+        [alt]="data.champion.name"
+        (error)="hideIcon(data.champion)"
+      />
+      <ng-template #letter>
+        <span class="portrait letter">{{ data.champion.name[0] }}</span>
+      </ng-template>
+      <div>
+        <h2 class="titleText">{{ data.champion.name }}</h2>
+        <p class="m-0">{{ data.champion.title }} · {{ data.champion.role }}</p>
+      </div>
+    </div>
+
+    <p *ngIf="!data.live" class="notice">
+      Couldn't reach Riot's Data Dragon, showing example items and prices.
     </p>
+
+    <h3 class="section">Your build</h3>
+    <ul class="slots">
+      <li *ngFor="let slot of slots; let i = index">
+        <button
+          type="button"
+          class="slot"
+          [class.filled]="slot"
+          [disabled]="!slot"
+          [title]="slot ? 'Remove ' + slot.name : 'Empty slot'"
+          (click)="remove(i)"
+        >
+          <ng-container *ngIf="slot">
+            <img
+              *ngIf="slot.icon; else initials"
+              [src]="slot.icon"
+              [alt]="slot.name"
+              (error)="hideIcon(slot)"
+            />
+            <ng-template #initials>
+              <span class="initials">{{ slot.name }}</span>
+            </ng-template>
+          </ng-container>
+        </button>
+      </li>
+    </ul>
+    <div class="summary">
+      <span class="total">{{ total | number }} gold</span>
+      <p-button
+        label="Reset"
+        styleClass="p-button-sm p-button-outlined"
+        [disabled]="total === 0"
+        (onClick)="reset()"
+      ></p-button>
+    </div>
+
+    <h3 class="section">Item shop</h3>
+    <ul class="shop">
+      <li *ngFor="let item of data.items">
+        <button
+          type="button"
+          class="shopItem"
+          [disabled]="inBuild(item) || isFull"
+          [title]="item.description"
+          (click)="add(item)"
+        >
+          <img
+            *ngIf="item.icon"
+            [src]="item.icon"
+            [alt]="item.name"
+            (error)="hideIcon(item)"
+          />
+          <span class="name">{{ item.name }}</span>
+          <span class="cost">{{ item.cost | number }}</span>
+        </button>
+      </li>
+    </ul>
   </p-card>
+  <ng-template #loading>
+    <p-card class="buildCard"><p class="m-0">Loading items...</p></p-card>
+  </ng-template>
 </div>
